@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Marina Laser Center</title>
+  </head>
+  <body>
+    <header
+      class="container d-flex flex-row align-items-center justify-content-between pt-3 mb-4"
+    >
+      <a href="/" class="">
+        <img src="./assets/logo.png" style="height: 100px" alt="logo" />
+      </a>
+      <nav
+        class="d-flex flex-row align-items-center justify-content-between gap-5 pt-4"
+      >
+        <ul class="nav nav-pills gap-5">
+          <li class="nav-item"><a href="#" class="">À propos</a></li>
+          <li class="nav-item"><a href="#" class="">Nos soins</a></li>
+          <li class="nav-item"><a href="#" class="">Nos tarifs</a></li>
+          <li class="nav-item"><a href="#" class="">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2">
+          <a href="#">
+            <img
+              src="./assets/instagram.svg"
+              alt="instagram"
+              style="height: 24px"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="./assets/facebook.svg"
+              alt="facebbok"
+              style="height: 24px"
+            />
+          </a>
+          <a href="#">
+            <img src="./assets/tiktok.svg" alt="tiktok" style="height: 24px" />
+          </a>
+        </div>
+        <a
+          href="#rendez-vous"
+          class="d-flex justify-content-center gap-1 px-3 py-2 rounded-3 bg-primary"
+        >
+          <img src="./assets/booking.svg" alt="plan" style="height: 24px" />
+          <span> Rendez-vous </span>
+        </a>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="mb-5">
+        <img
+          src="./assets/tree-leaf.png"
+          alt="leaf"
+          class="position-absolute start-0 top-50 translate-middle z-1 img-fluid"
+          style="width: 800px"
+        />
+        <img
+          src="./assets/leaf.png"
+          alt="leaf"
+          class="position-absolute top-100 start-100 translate-middle z-1 img-fluid"
+          style="width: 600px"
+        />
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="false"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img
+                class="rounded w-100 img-fluid"
+                src="./assets/smiling-woman-bathrobe-reading-magazine-while-relaxing-wellness-center.jpg"
+                alt="image"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>LA PLUS HAUTE TECHNOLOGIE</h1>
+                <p>pour la santé de votre peauet de votre corps</p>
+                <a href="#">Voir nos soins</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="rounded w-100 img-fluid"
+                src="./assets/smiling-woman-bathrobe-reading-magazine-while-relaxing-wellness-center.jpg"
+                alt="image"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>LA PLUS HAUTE TECHNOLOGIE</h1>
+                <p>pour la santé de votre peauet de votre corps</p>
+                <a href="#">Voir nos soins</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="rounded w-100 img-fluid"
+                src="./assets/smiling-woman-bathrobe-reading-magazine-while-relaxing-wellness-center.jpg"
+                alt="image"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>LA PLUS HAUTE TECHNOLOGIE</h1>
+                <p>pour la santé de votre peauet de votre corps</p>
+                <a href="#">Voir nos soins</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="rounded w-100 img-fluid"
+                src="./assets/smiling-woman-bathrobe-reading-magazine-while-relaxing-wellness-center.jpg"
+                alt="image"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>LA PLUS HAUTE TECHNOLOGIE</h1>
+                <p>pour la santé de votre peauet de votre corps</p>
+                <a href="#">Voir nos soins</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="my-5">
+        <h1 class="d-flex flex-column py-5 text-xl text-orange">
+          <span class="fw-lighter">MARINA</span>
+          <span class="fw-bolder">LASER CENTER</span>
+        </h1>
+        <div class="d-flex flex-row gap-5">
+          <div class="w-50 fw-lighter d-flex gap-2 flex-column">
+            <p>
+              Marina laser center est un centre laser spécialisé. Nous offrons
+              un service haut de gamme et proposons des traitements de haute
+              qualité avec les équipements les plus modernes et d’excellents
+              produits. Notre vision est de mettre le client au premier plan et
+              de créer un environnement chaleureux et convivial dans lequel nos
+              clients peuvent poursuivre leurs objectifs de beauté et découvrir
+              de nouvelles idées sur l’apparence et le rajeunissement
+            </p>
+            <p>
+              Nous comprenons l’importance de la vie privée, de la dignité et de
+              la confidentialité. Nous discutons avec vous de vos souhaits et
+              nous examinons vos besoins spécifiques pour améliorer votre beauté
+              naturelle. Nous le faisons avec des techniques sûres et efficaces.
+              Nous utilisons également la technologie la plus avancée et des
+              produits de haute qualité.
+            </p>
+            <span class="fw-bold">Bienvenue au centre laser de Marina.</span>
+            <p>
+              En janvier, nous ouvrirons les portes de notre tout nouveau Centre
+              au Marina Bay. Un Centre avec de nombreux traitements de luxe où
+              vous serez aidé avec un service de haute qualité. otre centre
+              dispose de 4 salles dans lesquelles le traitement de luxe peut
+              être effectué, tels que: traitements au laser, à la cryolipolyse,
+              au remplissage et au blanchiment des dents.
+            </p>
+            <span class="text-orange fw-bold"
+              >Pendant votre attente, vous pourrez déguster une tasse de café ou
+              de thé et attendre que la spécialiste vienne vous chercher.</span
+            >
+          </div>
+          <div class="w-50">
+            <img
+              src="./assets/video-placeholder.png"
+              alt="placeholder video"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="mt-5 d-flex justify-content-center">
+          <a class="px-5 py-3 rounded-3 border-orange" href="#"
+            >En savoir plus</a
+          >
+        </div>
+      </section>
+      <section class="my-5 position-relative">
+        <img
+          src="./assets/sincerely-media-gA8iUoWYvTk-unsplash.png"
+          alt="image"
+          class="img-fluid z-0 rounded-2"
+        />
+        <div
+          class="position-absolute top-0 start-50 translate-middle pt-5 mt-5"
+        >
+          <h1 class="text-xl text-orange fw-bolder">NOS SOINS</h1>
+        </div>
+      </section>
+    </main>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
