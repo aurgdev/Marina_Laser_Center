@@ -1,0 +1,56 @@
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .h-bg-image {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+  .logo {
+    height: 100px;
+  }
+  .bg-img-width {
+    width: 100%;
+  }
+  .carousel-caption h1 {
+    font-size: 46px;
+    font-weight: 900;
+  }
+  .carousel-caption p {
+    font-size: 46px;
+    font-weight: 100;
+  }
+  .h-bg-image {
+    height: 100vh;
+    height: 100%;
+  }
+  .carousel-caption a {
+    background-color: #f7ebde2d;
+    position: absolute;
+    top: 80%;
+    right: 33%;
+  }
+}

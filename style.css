@@ -1,7 +1,4 @@
-:root {
-  --main-color: "#C3660A";
-}
-
+/* reset all  */
 *,
 ::before,
 ::after {
@@ -43,25 +40,19 @@ input[type="reset"] {
   outline: inherit;
 }
 
+textarea:focus,
+input:focus {
+  outline: none;
+}
+input {
+  border: none;
+}
+
 a:hover {
   color: inherit;
 }
 
-.bg-primary {
-  background-color: #f7ebde !important;
-}
-.bg-primary-opacity {
-  background-color: hsla(0, 0%, 100%, 0.137) !important;
-}
-
-.bg-primary:hover {
-  /* border: 1px solid #C3660A; */
-  background-color: #c3670a5d !important;
-}
-
-.h-full {
-  height: 100%;
-}
+/* added utils to support bootsrap  */
 
 .h-screen {
   height: 100vh;
@@ -71,12 +62,77 @@ a:hover {
   width: 90%;
 }
 
-.logo {
-  height: 65px;
+.z-1 {
+  z-index: 10;
 }
-.h-bg-image {
-  height: 70vh;
+.z-10 {
+  z-index: 99;
 }
+.z-0 {
+  z-index: 0;
+}
+
+.text-lg {
+  font-size: clamp(1.6rem, 10vw, 2.4rem);
+}
+
+.font-bold {
+  font-weight: 800;
+}
+
+.w-20 {
+  width: 250px;
+}
+.w-30 {
+  width: 350px;
+}
+
+.text-orange-700 {
+  color: #c3660a;
+}
+
+.text-orange-700-opacity {
+  color: #c3670a8c;
+}
+
+::placeholder {
+  color: #c3660a;
+}
+
+.text-orange-100 {
+  color: #f8d7b3;
+}
+
+.bg-orange {
+  background-color: #c3660a;
+}
+
+/* modifying the bootsrap tools or adding above it */
+
+.carousel-caption {
+  left: 2%;
+  right: 1%;
+  text-align: left;
+}
+
+.carousel-indicators {
+  justify-content: left;
+  margin-left: 2%;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.carousel-indicators button.active {
+  background-color: #fff;
+}
+
 .carousel-caption h1 {
   font-size: 30px;
   font-weight: 900;
@@ -94,61 +150,23 @@ a:hover {
   font-size: clamp(0.4rem, 7vw, 0.8rem);
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
+.bg-primary {
+  background-color: #f7ebde !important;
+}
+.bg-primary-opacity {
+  background-color: hsla(0, 0%, 100%, 0.137) !important;
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-  .h-bg-image {
-    height: 100vh;
-  }
+.bg-primary:hover {
+  /* border: 1px solid #C3660A; */
+  background-color: #c3670a5d !important;
 }
 
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
+.logo {
+  height: 65px;
 }
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-  .logo {
-    height: 100px;
-  }
-  .bg-img-width {
-    width: 100%;
-  }
-  .carousel-caption h1 {
-    font-size: 46px;
-    font-weight: 900;
-  }
-  .carousel-caption p {
-    font-size: 46px;
-    font-weight: 100;
-  }
-  .h-bg-image {
-    height: 100vh;
-    height: 100%;
-  }
-  .carousel-caption a {
-    background-color: #f7ebde2d;
-    position: absolute;
-    top: 80%;
-    right: 33%;
-  }
+.h-bg-image {
+  height: 70vh;
 }
 
 .text-xl {
@@ -194,8 +212,15 @@ a:hover {
 
 .hide {
   display: none;
-  font-size: 12px;
+  font-size: 13px;
   text-align: center;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.bg-gradient:hover > h3 {
+  margin-bottom: 100px;
+  transition: all ease-in-out 300ms;
 }
 
 .bg-gradient:hover {
@@ -204,51 +229,16 @@ a:hover {
   transition: all ease-in-out 300ms;
   border-radius: 20px;
   background: rgba(219, 93, 9, 0.438);
+  box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
   z-index: 3;
 }
 .bg-gradient:hover > .hide {
   display: block;
 }
 .bg-gradient:hover::before {
-  background: rgba(219, 93, 9, 0.438);
-}
-
-.carousel-caption {
-  left: 2%;
-  right: 1%;
-  text-align: left;
-}
-
-.z-1 {
-  z-index: 10;
-}
-.z-10 {
-  z-index: 99;
-}
-.z-0 {
-  z-index: 0;
-}
-
-.carousel-indicators {
-  justify-content: left;
-  margin-left: 2%;
-}
-
-.carousel-indicators [data-bs-target] {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  background-color: transparent;
-  opacity: 1;
-}
-
-.carousel-indicators button.active {
-  background-color: #fff;
-}
-
-.text-lg {
-  font-size: clamp(1.6rem, 10vw, 2.4rem);
+  background: #c9500a6e;
 }
 
 .svg-filter-white {
@@ -260,22 +250,6 @@ a:hover {
     brightness(99%) contrast(92%);
 }
 
-.font-bold {
-  font-weight: 800;
-}
-
-.text-orange-700 {
-  color: #c3660a;
-}
-
-.text-orange-100 {
-  color: #f8d7b3;
-}
-
-.bg-orange {
-  background-color: #c3660a;
-}
-
 .bg-menu {
   background: rgba(194, 68, 10, 0.8);
   backdrop-filter: blur(4px);
@@ -284,7 +258,12 @@ a:hover {
 .border-orange {
   border: 1px solid #c3660a;
 }
-
+.border-white {
+  border: 1px solid #fff;
+}
+.px-6 {
+  padding: 1rem 5rem;
+}
 .blur {
   filter: blur(10px) grayscale(100%);
 }

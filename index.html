@@ -20,6 +20,7 @@
       href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
     <title>Marina Laser Center</title>
@@ -153,8 +154,8 @@
         </a>
       </nav>
     </header>
-    <main class="container">
-      <section class="mb-5">
+    <main class="">
+      <section class="mb-5 container">
         <!-- <img
           src="./assets/tree-leaf-half.png"
           alt="leaf"
@@ -316,7 +317,7 @@
           </div>
         </div>
       </section>
-      <section class="my-1 my-lg-5">
+      <section class="my-1 my-lg-5 container">
         <h1
           class="d-flex flex-column py-1 py-lg-5 text-xl text-orange-700 text-center text-lg-start"
         >
@@ -386,7 +387,7 @@
           >
         </div>
       </section>
-      <section class="my-5 position-relative">
+      <section class="my-5 position-relative overflow-hidden container">
         <img
           src="./assets/sincerely-media-gA8iUoWYvTk-unsplash.png"
           alt="image"
@@ -425,7 +426,7 @@
                 Blanchissement dentaire
               </h3>
               <p
-                class="position-absolute hide bottom-0 start-50 translate-middle-x"
+                class="position-absolute hide bottom-0 start-50 translate-middle-x w-100 px-3"
               >
                 Marina laser center est un centre laser spécialisé. Nous offrons
                 un service haut de gamme et proposons des traitements de haute
@@ -457,6 +458,75 @@
               </h3>
             </div>
           </div>
+        </div>
+        <div class="mt-5 d-flex justify-content-center">
+          <a class="px-5 py-3 rounded-3 border-orange" href="#"
+            >En savoir plus</a
+          >
+        </div>
+      </section>
+      <section class="my-5">
+        <div class="bg-orange py-5">
+          <div class="container d-flex align-items-center flex-column">
+            <h1
+              class="d-flex flex-column py-1 py-lg-5 text-xl text-white text-center text-lg-start align-items-center justify-content-center"
+            >
+              <span class="fw-light">PRENDRE UN</span>
+              <span class="font-bold">RENDEZ VOUS</span>
+            </h1>
+            <form>
+              <div
+                class="d-flex gap-4 flex-wrap flex-lg-nowrap w-100 text-orange-700-opacity fs-5 justify-content-between"
+              >
+                <div class="">
+                  <input
+                    type="text"
+                    class="px-3 py-4 rounded-3 w-30"
+                    placeholder="Nom complet"
+                  />
+                </div>
+                <div
+                  class="bg-white d-inline-flex rounded-3 align-items-center ps-3 gap-2"
+                >
+                  <img
+                    src="./assets/Flag_of_Morocco.svg.png"
+                    alt="flag"
+                    style="height: 20px"
+                  />
+                  <span> +212 </span>
+                  <input type="tel" class="h-100 rounded-3 w-20" />
+                </div>
+                <select class="text-orange-700-opacity px-4 rounded-3 w-30">
+                  <option selected>Vos soins souhaités</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select class="text-orange-700-opacity px-4 rounded-3 w-30">
+                  <option selected>Le jour souhaité</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="mt-5 mb-3 d-flex justify-content-center">
+                <button
+                  type="submit"
+                  class="px-6 py-3 rounded-3 border-white text-white"
+                  href="#"
+                >
+                  Valid
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="container my-5">
+        <div>
+          <h1 class="text-xl text-orange-700 text-center font-bold">
+            AVEZ VOUS DES QUESTIONS ?
+          </h1>
         </div>
       </section>
     </main>
