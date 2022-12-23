@@ -180,6 +180,39 @@ a:hover {
   z-index: 0;
 }
 
+.bg-gradient:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  bottom: 0;
+  background: rgba(148, 73, 23, 0.438);
+  z-index: 0;
+}
+
+.hide {
+  display: none;
+  font-size: 12px;
+  text-align: center;
+}
+
+.bg-gradient:hover {
+  overflow: hidden;
+  transform: scale(1.2);
+  transition: all ease-in-out 300ms;
+  border-radius: 20px;
+  background: rgba(219, 93, 9, 0.438);
+  z-index: 3;
+}
+.bg-gradient:hover > .hide {
+  display: block;
+}
+.bg-gradient:hover::before {
+  background: rgba(219, 93, 9, 0.438);
+}
+
 .carousel-caption {
   left: 2%;
   right: 1%;
