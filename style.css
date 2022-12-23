@@ -11,12 +11,34 @@
 }
 
 html, body {
-    height:100%;
-    }
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
 
 a {
   color: inherit;
   text-decoration: inherit;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 a:hover {
@@ -26,20 +48,58 @@ a:hover {
 .bg-primary {
     background-color: #f7ebde !important;
 }
+.bg-primary-opacity {
+    background-color: hsla(0, 0%, 100%, 0.137) !important;
+}
+
+.bg-primary:hover {
+  /* border: 1px solid #C3660A; */
+    background-color: #c3670a5d !important;
+
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 
 .container {
-  width: 100%;
+  width: 90%;
+}
+
+.logo {
+  height: 65px
+}
+.h-bg-image {
+  height: 70vh;
+}
+.carousel-caption h1 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.carousel-caption p {
+  font-size: 20;
+  font-weight: 100;
 }
 
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
   }
+ 
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+  .h-bg-image {
+    height: 100vh;
   }
 }
 
@@ -59,37 +119,75 @@ a:hover {
   .container {
     max-width: 1536px;
   }
+  .logo {
+    height: 100px
+  }
+  .bg-img-width {
+    width: 100%;
+  }
+  .carousel-caption h1 {
+    font-size: 46px;
+    font-weight: 900;
+    
+  }
+  .carousel-caption p {
+    font-size: 46px;
+    font-weight: 100;
+  }
+  .h-bg-image {
+    height: 100vh;
+    height: 100%;
+  }
+}
+
+
+.text-xl {
+  font-size: clamp(1rem, 7vw, 4rem);
+}
+
+.nav-item a:hover {
+  color: #C3660A;
+}
+
+
+.bg-center {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-item:before {
+  content: '';
+  position:absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(195, 103, 10, 0) 45%, rgba(155, 78, 2, 0.664) 99%);
+  z-index: 0;
 }
 
 .carousel-caption {
-    left: 1%;
+    left: 2%;
     right: 1%;
     text-align: left;
 }
 
-.gradient {
-  background: rgb(195,102,10);
-  background: linear-gradient(180deg, rgba(195,102,10,0) 45%, rgba(195,102,10,0.5690651260504201) 99%);
-}
 
-.carousel-caption h1 {
-  font-size: 50px;
-  font-weight: 900;
-}
-.carousel-caption p {
-  font-size: 50px;
-  font-weight: 100;
-}
+
 .carousel-caption a {
-  padding: 10px 20px;
-  background-color: #f7ebde41;
-  border-radius: 10px;
+  padding: 16px 40px;
+  background-color: #f7ebde2d;
+  border-radius: 8px;
   align-self: center;
   position: absolute;
-  top: 80%; right: 40%;
+  top: 80%; right: 33%;
 }
 .z-1 {
   z-index: 10;
+}
+.z-10 {
+  z-index: 99;
 }
 .z-0 {
   z-index: 0;
@@ -101,8 +199,8 @@ a:hover {
 }
 
 .carousel-indicators [data-bs-target] {
-    width: 12px;
-	height: 12px;
+    width: 11px;
+	height: 11px;
 	border-radius: 50%;
     border: 1px solid #fff;
     background-color: transparent;
@@ -114,17 +212,40 @@ a:hover {
 }
 
 
-.text-xl {
-  font-size: 60px;
+
+
+.text-lg {
+  font-size: clamp(1.6rem, 10vw, 2.4rem);
 }
 
-.text-orange {
+.svg-filter-white {
+  filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(350deg) brightness(106%) contrast(100%);
+}
+.svg-filter-orange {
+  filter: invert(32%) sepia(92%) saturate(2022%) hue-rotate(22deg) brightness(99%) contrast(92%);
+}
+
+.font-bold {
+  font-weight: 800;
+}
+
+.text-orange-700 {
   color: #C3660A;
+}
+
+.text-orange-100 {
+  color: #f8d7b3;
 }
 
 .bg-orange{
   background-color: #C3660A;
 }
+
+.bg-menu {
+  background: rgba(194, 68, 10, 0.8);
+  backdrop-filter: blur(4px);
+}
+
 .border-orange{
   border: 1px solid #C3660A;
 }
