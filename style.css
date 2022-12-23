@@ -1,5 +1,5 @@
 :root {
-    --main-color: "#C3660A"
+  --main-color: "#C3660A";
 }
 
 *,
@@ -10,8 +10,9 @@
   margin: 0;
 }
 
-html, body {
-  font-family: 'Montserrat', sans-serif;
+html,
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 h1,
@@ -25,37 +26,37 @@ h6 {
   margin: 0;
 }
 
-
 a {
   color: inherit;
   text-decoration: inherit;
 }
 
-button, input[type="submit"], input[type="reset"] {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 a:hover {
-    color: inherit;;
+  color: inherit;
 }
 
 .bg-primary {
-    background-color: #f7ebde !important;
+  background-color: #f7ebde !important;
 }
 .bg-primary-opacity {
-    background-color: hsla(0, 0%, 100%, 0.137) !important;
+  background-color: hsla(0, 0%, 100%, 0.137) !important;
 }
 
 .bg-primary:hover {
   /* border: 1px solid #C3660A; */
-    background-color: #c3670a5d !important;
-
+  background-color: #c3670a5d !important;
 }
 
 .h-full {
@@ -66,13 +67,12 @@ a:hover {
   height: 100vh;
 }
 
-
 .container {
   width: 90%;
 }
 
 .logo {
-  height: 65px
+  height: 65px;
 }
 .h-bg-image {
   height: 70vh;
@@ -86,12 +86,18 @@ a:hover {
   font-size: 20;
   font-weight: 100;
 }
+.carousel-caption a {
+  background-color: #f7ebde2d;
+  position: absolute;
+  top: 92%;
+  right: 6%;
+  font-size: clamp(0.4rem, 7vw, 0.8rem);
+}
 
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
   }
- 
 }
 
 @media (min-width: 768px) {
@@ -120,7 +126,7 @@ a:hover {
     max-width: 1536px;
   }
   .logo {
-    height: 100px
+    height: 100px;
   }
   .bg-img-width {
     width: 100%;
@@ -128,7 +134,6 @@ a:hover {
   .carousel-caption h1 {
     font-size: 46px;
     font-weight: 900;
-    
   }
   .carousel-caption p {
     font-size: 46px;
@@ -138,17 +143,21 @@ a:hover {
     height: 100vh;
     height: 100%;
   }
+  .carousel-caption a {
+    background-color: #f7ebde2d;
+    position: absolute;
+    top: 80%;
+    right: 33%;
+  }
 }
-
 
 .text-xl {
   font-size: clamp(1rem, 7vw, 4rem);
 }
 
 .nav-item a:hover {
-  color: #C3660A;
+  color: #c3660a;
 }
-
 
 .bg-center {
   background-repeat: no-repeat;
@@ -156,33 +165,27 @@ a:hover {
 }
 
 .carousel-item:before {
-  content: '';
-  position:absolute;
-  top:0;
+  content: "";
+  position: absolute;
+  top: 0;
   left: 0;
   right: 0;
   opacity: 1;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(195, 103, 10, 0) 45%, rgba(155, 78, 2, 0.664) 99%);
+  background: linear-gradient(
+    180deg,
+    rgba(195, 103, 10, 0) 30%,
+    rgba(196, 92, 23, 0.664) 99%
+  );
   z-index: 0;
 }
 
 .carousel-caption {
-    left: 2%;
-    right: 1%;
-    text-align: left;
+  left: 2%;
+  right: 1%;
+  text-align: left;
 }
 
-
-
-.carousel-caption a {
-  padding: 16px 40px;
-  background-color: #f7ebde2d;
-  border-radius: 8px;
-  align-self: center;
-  position: absolute;
-  top: 80%; right: 33%;
-}
 .z-1 {
   z-index: 10;
 }
@@ -194,35 +197,34 @@ a:hover {
 }
 
 .carousel-indicators {
-    justify-content: left;
-    margin-left: 2%;
+  justify-content: left;
+  margin-left: 2%;
 }
 
 .carousel-indicators [data-bs-target] {
-    width: 11px;
-	height: 11px;
-	border-radius: 50%;
-    border: 1px solid #fff;
-    background-color: transparent;
-    opacity: 1;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 1;
 }
 
 .carousel-indicators button.active {
-    background-color: #fff;
+  background-color: #fff;
 }
-
-
-
 
 .text-lg {
   font-size: clamp(1.6rem, 10vw, 2.4rem);
 }
 
 .svg-filter-white {
-  filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(350deg) brightness(106%) contrast(100%);
+  filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(350deg)
+    brightness(106%) contrast(100%);
 }
 .svg-filter-orange {
-  filter: invert(32%) sepia(92%) saturate(2022%) hue-rotate(22deg) brightness(99%) contrast(92%);
+  filter: invert(32%) sepia(92%) saturate(2022%) hue-rotate(22deg)
+    brightness(99%) contrast(92%);
 }
 
 .font-bold {
@@ -230,15 +232,15 @@ a:hover {
 }
 
 .text-orange-700 {
-  color: #C3660A;
+  color: #c3660a;
 }
 
 .text-orange-100 {
   color: #f8d7b3;
 }
 
-.bg-orange{
-  background-color: #C3660A;
+.bg-orange {
+  background-color: #c3660a;
 }
 
 .bg-menu {
@@ -246,8 +248,8 @@ a:hover {
   backdrop-filter: blur(4px);
 }
 
-.border-orange{
-  border: 1px solid #C3660A;
+.border-orange {
+  border: 1px solid #c3660a;
 }
 
 .blur {
