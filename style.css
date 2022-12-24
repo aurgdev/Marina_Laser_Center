@@ -1,55 +1,8 @@
 /* reset all  */
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 
 html,
 body {
   font-family: "Montserrat", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-button,
-input[type="submit"],
-input[type="reset"] {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-}
-
-textarea:focus,
-input:focus {
-  outline: none;
-}
-input {
-  border: none;
-}
-
-a:hover {
-  color: inherit;
 }
 
 /* added utils to support bootsrap  */
@@ -76,15 +29,44 @@ a:hover {
   font-size: clamp(1.6rem, 10vw, 2.4rem);
 }
 
+.h-bg-image {
+  height: 70vh;
+}
+
+.bg-footer {
+  background-color: #2f2f2f;
+}
+
+.text-xl {
+  font-size: clamp(1rem, 7vw, 4rem);
+}
+
+.bg-brown {
+  background-color: #563d25;
+  width: 400px;
+  height: 200px;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
 .font-bold {
   font-weight: 800;
 }
 
-.w-20 {
+.w-250 {
   width: 250px;
 }
-.w-30 {
+.w-350 {
   width: 350px;
+}
+
+.w-60 {
+  width: 60%;
+}
+.w-40 {
+  width: 40%;
 }
 
 .text-orange-700 {
@@ -103,8 +85,56 @@ a:hover {
   color: #f8d7b3;
 }
 
+.input-flag {
+  background: url(./assets/Flag_of_Morocco.svg.png) no-repeat scroll 7px 50%;
+  padding-left: 50px;
+  background-size: 34px;
+}
+
 .bg-orange {
   background-color: #c3660a;
+}
+
+.bg-primary {
+  background-color: #f7ebde !important;
+}
+.bg-secondary {
+  background-color: #fbf5f0 !important;
+}
+.bg-primary-opacity {
+  background-color: hsla(0, 0%, 100%, 0.137) !important;
+}
+
+.bg-primary:hover {
+  /* border: 1px solid #C3660A; */
+  background-color: #c3670a5d !important;
+}
+
+.svg-filter-white {
+  filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(350deg)
+    brightness(106%) contrast(100%);
+}
+.svg-filter-orange {
+  filter: invert(32%) sepia(92%) saturate(2022%) hue-rotate(22deg)
+    brightness(99%) contrast(92%);
+}
+
+.bg-menu {
+  background: rgba(194, 68, 10, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+.border-orange {
+  border: 1px solid #c3660a;
+}
+.border-white {
+  border: 1px solid #fff;
+}
+.px-6 {
+  padding: 1rem 5rem;
+}
+.blur {
+  filter: blur(10px) grayscale(100%);
 }
 
 /* modifying the bootsrap tools or adding above it */
@@ -150,27 +180,8 @@ a:hover {
   font-size: clamp(0.4rem, 7vw, 0.8rem);
 }
 
-.bg-primary {
-  background-color: #f7ebde !important;
-}
-.bg-primary-opacity {
-  background-color: hsla(0, 0%, 100%, 0.137) !important;
-}
-
-.bg-primary:hover {
-  /* border: 1px solid #C3660A; */
-  background-color: #c3670a5d !important;
-}
-
 .logo {
   height: 65px;
-}
-.h-bg-image {
-  height: 70vh;
-}
-
-.text-xl {
-  font-size: clamp(1rem, 7vw, 4rem);
 }
 
 .nav-item a:hover {
@@ -239,31 +250,4 @@ a:hover {
 }
 .bg-gradient:hover::before {
   background: #c9500a6e;
-}
-
-.svg-filter-white {
-  filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(350deg)
-    brightness(106%) contrast(100%);
-}
-.svg-filter-orange {
-  filter: invert(32%) sepia(92%) saturate(2022%) hue-rotate(22deg)
-    brightness(99%) contrast(92%);
-}
-
-.bg-menu {
-  background: rgba(194, 68, 10, 0.8);
-  backdrop-filter: blur(4px);
-}
-
-.border-orange {
-  border: 1px solid #c3660a;
-}
-.border-white {
-  border: 1px solid #fff;
-}
-.px-6 {
-  padding: 1rem 5rem;
-}
-.blur {
-  filter: blur(10px) grayscale(100%);
 }
