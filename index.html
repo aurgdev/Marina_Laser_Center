@@ -20,9 +20,14 @@
       href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="swiper.css" />
     <title>Marina Laser Center</title>
   </head>
   <body>
@@ -35,6 +40,7 @@
       <button
         class="navbar-toggler d-flex d-lg-none"
         type="button"
+        id="open-button"
         data-bs-toggle="collapse"
         data-bs-target="#collapseExample"
         aria-expanded="false"
@@ -55,6 +61,7 @@
           <div class="d-flex justify-content-end w-100">
             <button
               type="button"
+              id="close-button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseExample"
               aria-expanded="false"
@@ -156,19 +163,136 @@
     </header>
     <main class="">
       <section class="mb-5 container">
-        <!-- <img
+        <img
           src="./assets/tree-leaf-half.png"
-          alt="leaf"
-          class="position-absolute start-0 top-50 translate-middle z-1 pe-none"
-          style="width: 600px"
+          alt="leaf-left"
+          class="z-1 pe-none leaf-left"
         />
         <img
           src="./assets/leaf-half.png"
-          alt="leaf"
-          class="position-absolute top-100 end-0 translate-middle-y z-1 pe-none"
-          style="width: 300px"
-        /> -->
-        <div
+          alt="leaf-right"
+          class="z-1 pe-none leaf-right"
+        />
+        <!-- Slider main container -->
+        <div class="swiper rounded">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide text-white h-100 w-100">
+              <img
+                class="bg-center"
+                src="./assets/smiling-woman-bathrobe-reading-magazine-while-relaxing-wellness.jpg"
+                alt="image"
+              />
+              <div
+                class="position-absolute bottom-0 slider-info-position d-flex justify-content-between align-items-center"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-between flex-lg-row flex-column-reverse"
+                >
+                  <div
+                    class="d-flex align-items-lg-start align-items-center flex-column px-4 px-lg-0 text-shadow"
+                  >
+                    <h1>LA PLUS HAUTE TECHNOLOGIE</h1>
+                    <p>pour la santé de votre peauet de votre corps</p>
+                    <a href="#" class="rounded-2">Voir nos soins</a>
+                  </div>
+                  <img
+                    src="./assets/signature.png"
+                    alt="signature"
+                    class="img-fluid"
+                    style="width: 400px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide text-white h-100 w-100">
+              <img
+                class="bg-center"
+                src="./assets/attractive-african-woman-enjoying-face-massage-spa-salon.jpg"
+                alt="image"
+              />
+              <div
+                class="position-absolute bottom-0 slider-info-position d-flex justify-content-between align-items-center"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-between flex-lg-row flex-column-reverse"
+                >
+                  <div
+                    class="d-flex align-items-lg-start align-items-center flex-column px-4 px-lg-0 text-shadow"
+                  >
+                    <h1>LA PLUS HAUTE TECHNOLOGIE</h1>
+                    <p>pour la santé de votre peauet de votre corps</p>
+                    <a href="#" class="rounded-2">Voir nos soins</a>
+                  </div>
+                  <img
+                    src="./assets/signature.png"
+                    alt="signature"
+                    class="img-fluid"
+                    style="width: 400px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide text-white h-100 w-100">
+              <img
+                class="bg-center"
+                src="./assets/female-cosmetologist-making-facial-treatment-beautiful-woma.jpg"
+                alt="image"
+              />
+              <div
+                class="position-absolute bottom-0 slider-info-position d-flex justify-content-between align-items-center"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-between flex-lg-row flex-column-reverse"
+                >
+                  <div
+                    class="d-flex align-items-lg-start align-items-center flex-column px-4 px-lg-0 text-shadow"
+                  >
+                    <h1>LA PLUS HAUTE TECHNOLOGIE</h1>
+                    <p>pour la santé de votre peauet de votre corps</p>
+                    <a href="#" class="rounded-2">Voir nos soins</a>
+                  </div>
+                  <img
+                    src="./assets/signature.png"
+                    alt="signature"
+                    class="img-fluid"
+                    style="width: 400px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide text-white h-100 w-100">
+              <img
+                class="bg-center"
+                src="./assets/smiling-woman-bathrobe-reading-magazine-while-relaxing-wellness.jpg"
+                alt="image"
+              />
+              <div
+                class="position-absolute bottom-0 slider-info-position d-flex justify-content-between align-items-center"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-between flex-lg-row flex-column-reverse"
+                >
+                  <div
+                    class="d-flex align-items-lg-start align-items-center flex-column px-4 px-lg-0 text-shadow"
+                  >
+                    <h1>LA PLUS HAUTE TECHNOLOGIE</h1>
+                    <p>pour la santé de votre peauet de votre corps</p>
+                    <a href="#" class="rounded-2">Voir nos soins</a>
+                  </div>
+                  <img
+                    src="./assets/signature.png"
+                    alt="signature"
+                    class="img-fluid"
+                    style="width: 400px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- <div
           id="carouselExampleCaptions"
           class="carousel slide h-100"
           data-bs-ride="false"
@@ -315,7 +439,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
       <section class="my-1 my-lg-5 container">
         <h1
@@ -387,81 +511,148 @@
           >
         </div>
       </section>
-      <section class="my-5 position-relative overflow-hidden container">
-        <img
-          src="./assets/sincerely-media-gA8iUoWYvTk-unsplash.png"
-          alt="image"
-          class="img-fluid z-0 rounded-2 w-100"
-          style="height: 860px"
-        />
-        <div class="position-absolute top-0 start-50 translate-middle-x pt-5">
-          <h1 class="text-xl text-center text-orange-700 fw-bolder">
-            NOS SOINS
-          </h1>
-          <div class="d-flex mt-5">
-            <div class="position-relative bg-gradient">
-              <img
-                src="./assets/laser-epilation-hair-removal-therapy.jpg"
-                alt="image"
-                style="width: 320px"
-                class="bg-center"
-              />
-              <h3
-                class="text-white fs-2 bottom-0 start-50 translate-middle-x pb-4 position-absolute"
-              >
-                Laser
-              </h3>
-            </div>
-            <div class="position-relative bg-gradient">
-              <img
-                src="./assets/dentist-with-smile.jpg"
-                alt="image"
-                style="width: 320px"
-              />
-              <h3
-                class="text-white fs-2 bottom-0 start-50 translate-middle-x pb-4 position-absolute text-center"
-              >
-                Blanchissement dentaire
-              </h3>
-              <p
-                class="position-absolute hide bottom-0 start-50 translate-middle-x w-100 px-3"
-              >
-                Marina laser center est un centre laser spécialisé. Nous offrons
-                un service haut de gamme et proposons des traitements de haute
-                qualité avec les équipements les plus modernes.
-              </p>
-            </div>
-            <div class="position-relative bg-gradient">
-              <img
-                src="./assets/expressive-young-woman-posing-studio.jpg"
-                alt="image"
-                style="width: 320px"
-              />
-              <h3
-                class="text-white fs-2 bottom-0 start-50 translate-middle-x pb-4 position-absolute"
-              >
-                Cryolipolyse
-              </h3>
-            </div>
-            <div class="position-relative bg-gradient">
-              <img
-                src="./assets/beautician-doing-microblading-procedure-woman-beauty-salon.jpg"
-                alt="image"
-                style="width: 320px"
-              />
-              <h3
-                class="text-white fs-2 bottom-0 start-50 translate-middle-x pb-4 position-absolute"
-              >
-                Remplissage
-              </h3>
+      <section class="my-5 position-relative">
+        <div class="bg-nos-soins rounded d-none d-lg-block container">
+          <div class="pt-5 d-flex flex-column align-items-center">
+            <h1 class="text-xl text-center text-orange-700 fw-bolder">
+              NOS SOINS
+            </h1>
+            <div class="d-flex my-5 py-5">
+              <div class="bg-gradient position-relative">
+                <img
+                  src="./assets/laser-epilation-hair-removal-therapy.jpg"
+                  alt="image"
+                  style="width: 320px"
+                  class="bg-center"
+                />
+                <h3
+                  class="text-white fs-2 bottom-0 start-50 translate-middle-x pb-4 position-absolute"
+                >
+                  Laser
+                </h3>
+              </div>
+              <div class="position-relative bg-gradient">
+                <img
+                  src="./assets/dentist-with-smile.jpg"
+                  alt="image"
+                  style="width: 320px"
+                />
+                <h3
+                  class="text-white fs-2 bottom-0 start-50 translate-middle-x pb-4 position-absolute text-center"
+                >
+                  Blanchissement dentaire
+                </h3>
+                <p
+                  class="position-absolute hide bottom-0 start-50 translate-middle-x w-100 px-3"
+                >
+                  Marina laser center est un centre laser spécialisé. Nous
+                  offrons un service haut de gamme et proposons des traitements
+                  de haute qualité avec les équipements les plus modernes.
+                </p>
+              </div>
+              <div class="position-relative bg-gradient">
+                <img
+                  src="./assets/expressive-young-woman-posing-studio.jpg"
+                  alt="image"
+                  style="width: 320px"
+                />
+                <h3
+                  class="text-white fs-2 bottom-0 start-50 translate-middle-x pb-4 position-absolute"
+                >
+                  Cryolipolyse
+                </h3>
+              </div>
+              <div class="position-relative bg-gradient">
+                <img
+                  src="./assets/beautician-doing-microblading-procedure-woman-beauty-salon.jpg"
+                  alt="image"
+                  style="width: 320px"
+                />
+                <h3
+                  class="text-white fs-2 bottom-0 start-50 translate-middle-x pb-4 position-absolute"
+                >
+                  Remplissage
+                </h3>
+              </div>
             </div>
           </div>
         </div>
-        <div class="mt-5 d-flex justify-content-center">
+        <div class="mt-5 d-flex justify-content-center container">
           <a class="px-5 py-3 rounded-3 border-orange" href="#"
             >En savoir plus</a
           >
         </div>
+        <!-- <div class="bg-nos-soins">
+          <h1 class="text-xl text-center text-orange-700 fw-bolder">
+            NOS SOINS
+          </h1>
+          <div>
+            <div class="swiper-mobile overflow-hidden">
+              <div class="swiper-wrapper swiper-wrapper-mobile">
+                <div class="swiper-slide swiper-slide-mobile">
+                  <div class="">
+                    <img
+                      src="./assets/laser-epilation-hair-removal-therapy.jpg"
+                      alt="image"
+                      style="width: 320px"
+                      class="bg-center"
+                    />
+                    <h3
+                      class="text-white fs-2 bottom-0 start-50 translate-middle-x pb-4 position-absolute"
+                    >
+                      Laser
+                    </h3>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-mobile">
+                  <div class="">
+                    <img
+                      src="./assets/laser-epilation-hair-removal-therapy.jpg"
+                      alt="image"
+                      style="width: 320px"
+                      class="bg-center"
+                    />
+                    <h3
+                      class="text-white fs-2 bottom-0 start-50 translate-middle-x pb-4 position-absolute"
+                    >
+                      Laser
+                    </h3>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-mobile">
+                  <div class="">
+                    <img
+                      src="./assets/laser-epilation-hair-removal-therapy.jpg"
+                      alt="image"
+                      style="width: 320px"
+                      class="bg-center"
+                    />
+                    <h3
+                      class="text-white fs-2 bottom-0 start-50 translate-middle-x pb-4 position-absolute"
+                    >
+                      Laser
+                    </h3>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-mobile">
+                  <div class="">
+                    <img
+                      src="./assets/laser-epilation-hair-removal-therapy.jpg"
+                      alt="image"
+                      style="width: 320px"
+                      class="bg-center"
+                    />
+                    <h3
+                      class="text-white fs-2 bottom-0 start-50 translate-middle-x pb-4 position-absolute"
+                    >
+                      Laser
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
       </section>
       <section class="my-5">
         <div class="bg-orange py-4 py-lg-5">
@@ -747,10 +938,38 @@
     </main>
 
     <!-- JavaScript Bundle with Popper -->
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
+
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: "auto",
+        // loop: true,
+        // autoplay: {
+        //   delay: 5000,
+        //   pauseOnMouseEnter: true,
+        // },
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      var swiper = new Swiper(".swiper-mobile", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+
+    <script src="script.js"></script>
   </body>
 </html>

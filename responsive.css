@@ -44,6 +44,14 @@
   .number-size {
     font-size: 2.4rem;
   }
+  .leaf-right {
+    transition: all ease-in-out;
+    position: absolute;
+    transform: translateY(-50%);
+    right: 0;
+    top: 100%;
+    width: 18%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -64,6 +72,18 @@
   }
   .w-lg-25 {
     width: 25% !important;
+  }
+  .slider-info-position {
+    left: 3%;
+    top: 68%;
+  }
+  .swiper-slide a {
+    background-color: #f7ebde2d;
+    position: absolute;
+    top: 72%;
+    right: 32%;
+    font-size: 16px;
+    padding: 16px 40px;
   }
 }
 
@@ -135,22 +155,17 @@
     width: 400px;
     height: 180px;
   }
-  .carousel-caption h1 {
+
+  .swiper-slide h1 {
     font-size: 46px;
     font-weight: 900;
   }
-  .carousel-caption p {
-    font-size: 46px;
-    font-weight: 100;
+  .swiper-slide p {
+    font-size: 40px;
+    font-weight: 200;
   }
   .h-bg-image {
     height: 100vh;
     height: 100%;
-  }
-  .carousel-caption a {
-    background-color: #f7ebde2d;
-    position: absolute;
-    top: 80%;
-    right: 33%;
   }
 }

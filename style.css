@@ -151,45 +151,30 @@ body {
 
 /* modifying the bootsrap tools or adding above it */
 
-.carousel-caption {
-  left: 2%;
-  right: 1%;
+.swiper-slide {
   text-align: left;
 }
-
-.carousel-indicators {
-  justify-content: left;
-  margin-left: 2%;
+.slider-info-position {
+  /* left: 2%; */
+  top: 48%;
 }
-
-.carousel-indicators [data-bs-target] {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  background-color: transparent;
-  opacity: 1;
-}
-
-.carousel-indicators button.active {
-  background-color: #fff;
-}
-
-.carousel-caption h1 {
+.swiper-slide h1 {
   font-size: 30px;
   font-weight: 900;
 }
 
-.carousel-caption p {
+.swiper-slide p {
   font-size: 20;
   font-weight: 100;
+  margin: 0;
 }
-.carousel-caption a {
+.swiper-slide a {
   background-color: #f7ebde2d;
   position: absolute;
-  top: 92%;
+  top: 86%;
   right: 6%;
-  font-size: clamp(0.4rem, 7vw, 0.8rem);
+  font-size: 12px;
+  padding: 10px 30px;
 }
 
 .logo {
@@ -203,12 +188,42 @@ body {
   color: #c3660a;
 }
 
+.text-shadow {
+  text-shadow: 0px 0px 1px #000000;
+}
+
 .bg-center {
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  min-height: 100%;
+  background-position: center;
+  object-fit: cover;
+}
+.bg-nos-soins {
+  background-size: cover;
+  background: url(./assets/sincerely-media-gA8iUoWYvTk-unsplash.png) no-repeat
+    scroll;
+  background-position: center;
+  /* background-size: 300px; */
 }
 
-.carousel-item:before {
+.leaf-right {
+  position: absolute;
+  transform: translateY(-50%);
+  right: 0;
+  top: 30%;
+  width: 30%;
+}
+.leaf-left {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 0;
+  top: 50%;
+  width: 40%;
+}
+
+.swiper-slide:before {
   content: "";
   position: absolute;
   top: 0;
