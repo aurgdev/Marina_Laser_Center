@@ -2,14 +2,47 @@
   .container {
     max-width: 640px;
   }
+  .w-sm-25 {
+    width: 25% !important;
+  }
+  .w-sm-40 {
+    width: 40% !important;
+  }
+  .w-sm-50 {
+    width: 50% !important;
+  }
+  .w-sm-75 {
+    width: 75% !important;
+  }
+  .w-sm-100 {
+    width: 100% !important;
+  }
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
   }
+  .w-md-25 {
+    width: 25% !important;
+  }
+  .w-md-40 {
+    width: 40% !important;
+  }
+  .w-md-50 {
+    width: 50% !important;
+  }
+  .w-md-75 {
+    width: 75% !important;
+  }
+  .w-md-100 {
+    width: 100% !important;
+  }
   .h-bg-image {
     height: 100vh;
+  }
+  .number-size {
+    font-size: 2.4rem;
   }
 }
 
@@ -17,11 +50,52 @@
   .container {
     max-width: 1024px;
   }
+  .w-lg-50 {
+    width: 50% !important;
+  }
+  .w-lg-40 {
+    width: 40% !important;
+  }
+  .w-lg-75 {
+    width: 75% !important;
+  }
+  .w-lg-100 {
+    width: 100% !important;
+  }
+  .w-lg-25 {
+    width: 25% !important;
+  }
 }
 
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+  .w-xl-50 {
+    width: 50% !important;
+  }
+  .w-xl-40 {
+    width: 40% !important;
+  }
+  .w-xl-75 {
+    width: 75% !important;
+  }
+  .w-xl-100 {
+    width: 100% !important;
+  }
+  .w-xl-25 {
+    width: 25% !important;
+  }
+  .w-input {
+    width: 300px;
+  }
+  .footer-logo {
+    height: 90px;
+  }
+  .bg-brown {
+    background-color: #563d25;
+    width: 360px;
+    height: 160px;
   }
 }
 
@@ -29,11 +103,37 @@
   .container {
     max-width: 1536px;
   }
+  .w-xxl-25 {
+    width: 25% !important;
+  }
+  .w-xxl-40 {
+    width: 40% !important;
+  }
+  .w-xxl-50 {
+    width: 50% !important;
+  }
+  .w-xxl-75 {
+    width: 75% !important;
+  }
+  .w-xxl-100 {
+    width: 100% !important;
+  }
+  .w-input {
+    width: 360px;
+  }
   .logo {
+    height: 100px;
+  }
+  .footer-logo {
     height: 100px;
   }
   .bg-img-width {
     width: 100%;
+  }
+  .bg-brown {
+    background-color: #563d25;
+    width: 400px;
+    height: 180px;
   }
   .carousel-caption h1 {
     font-size: 46px;
