@@ -29,6 +29,10 @@ body {
   width: 25%;
 }
 
+.text-base {
+  font-size: 0.8rem;
+}
+
 .text-lg {
   font-size: clamp(1.6rem, 10vw, 2.4rem);
 }
@@ -37,7 +41,7 @@ body {
   height: 70vh;
 }
 
-.bg-footer {
+.bg-gray {
   background-color: #2f2f2f;
 }
 
@@ -57,6 +61,7 @@ body {
 
 .text-sm {
   font-size: 14px;
+  line-height: 1.1;
 }
 
 .font-bold {
@@ -97,6 +102,15 @@ body {
   color: #f8d7b3;
 }
 
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 0;
+}
+
 .input-flag {
   background: url(./assets/Flag_of_Morocco.svg.png) no-repeat scroll 2px 50%;
   padding-left: 50px;
@@ -105,6 +119,9 @@ body {
 
 .bg-orange {
   background-color: #c3660a;
+}
+.bg-orange-300 {
+  background-color: #e8aa00;
 }
 
 .bg-primary {
@@ -132,19 +149,44 @@ body {
 }
 
 .bg-menu {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transform: translateY(-100%);
+  transition: 0.7s;
   background: rgba(194, 68, 10, 0.8);
   backdrop-filter: blur(4px);
 }
-
+.active-menu {
+  transform: translateY(0);
+  overscroll-behavior: contain;
+  position: fixed;
+}
+.table > :not(caption) > * > * {
+  border-bottom-width: 0px;
+}
 .border-orange {
   border: 1px solid #c3660a;
+}
+.border-orange-300 {
+  border: 1px solid #e8aa00;
 }
 .border-white {
   border: 1px solid #fff;
 }
-.px-6 {
-  padding: 1rem 5rem;
+.border-black {
+  border: 1px solid #000;
 }
+.px-6 {
+  padding: 1rem 3rem;
+}
+.p-6 {
+  padding: 5rem;
+}
+
 .blur {
   filter: blur(10px) grayscale(100%);
 }
@@ -197,9 +239,35 @@ body {
   background-size: cover;
   width: 100%;
   min-height: 100%;
+  background-position: top;
+  object-fit: cover;
+}
+
+.bg-about {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20vh;
   background-position: center;
   object-fit: cover;
 }
+
+.bg-about-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(195, 103, 10, 0) 30%,
+    rgba(196, 92, 23, 0.664) 99%
+  );
+  z-index: 0;
+}
+
 .bg-nos-soins {
   background-size: cover;
   background: url(./assets/sincerely-media-gA8iUoWYvTk-unsplash.png) no-repeat
@@ -222,6 +290,20 @@ body {
   top: 50%;
   width: 40%;
 }
+.leaf-left-half {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 0%;
+  top: 40%;
+  width: 40%;
+}
+.leaf-left-half-about {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 6%;
+  top: 40%;
+  width: 20%;
+}
 
 .swiper-slide:before {
   content: "";
@@ -239,6 +321,22 @@ body {
   z-index: 0;
 }
 
+.bg-gradient-orange:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(195, 103, 10, 0) 70%,
+    rgba(196, 92, 23, 0.664) 99%
+  );
+  z-index: 0;
+}
+
 .bg-gradient:before {
   content: "";
   position: absolute;
@@ -249,6 +347,15 @@ body {
   bottom: 0;
   background: rgba(148, 73, 23, 0.438);
   z-index: 0;
+}
+
+.about-rounded {
+  border-radius: 10px;
+}
+
+.about-info-hide {
+  display: block;
+  transition: all ease-in-out 0.3s;
 }
 
 .hide {
@@ -274,6 +381,20 @@ body {
   -webkit-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
   -moz-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
   z-index: 3;
+}
+.bg-gradient-transparent:hover {
+  overflow: hidden;
+  transform: scale(1.1);
+  transition: all ease-in-out 300ms;
+  border-radius: 20px;
+  box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
+  z-index: 3;
+}
+
+.bg-gradient-transparent:hover > .hide {
+  display: block;
 }
 .bg-gradient:hover > .hide {
   display: block;
